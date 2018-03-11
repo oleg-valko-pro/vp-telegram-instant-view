@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Project-Id-Version: VP+ Telegram Instant View\n"
+"POT-Creation-Date: 2018-02-25 08:44+0200\n"
+"PO-Revision-Date: 2018-02-25 09:04+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: vp-plus-telegram-instant-view.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: uk_UA\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/settings-page.php:7
+msgid "Telegram Instant View"
+msgstr "Telegram Миттєвий перегляд"
+
+#: admin/settings-page.php:16
+msgid "Step 1"
+msgstr "Крок 1"
+
+#: admin/settings-page.php:18
+msgid ""
+"Create a template to instant view your site - <a href=\"http://instantview."
+"telegram.org/my/\" target=\"_blank\">instantview.telegram.org/my</a>"
+msgstr ""
+"Створіть шаблон миттєвого перегляду для вашого сайту - <a href=\"http://"
+"instantview.telegram.org/my/\" target=\"_blank\">instantview.telegram.org/"
+"my</a>"
+
+#: admin/settings-page.php:19
+msgid ""
+"Enter the addresses of your site and create a template according to the "
+"documentation - <a href=\"http://instantview.telegram.org/docs\" target="
+"\"_blank\">instantview.telegram.org/docs</a>"
+msgstr ""
+"Введіть адрес вашого сайту і створіть шаблон згідно документації - <a href="
+"\"http://instantview.telegram.org/docs\" target=\"_blank\">instantview."
+"telegram.org/docs</a>"
+
+#: admin/settings-page.php:20
+msgid ""
+"Or order an individual template creation for your site - <a href=\"http://"
+"mailto:oleg@valko.pro\" target=\"_blank\">oleg@valko.pro</a>"
+msgstr ""
+"Або замовте розробку шаблону для вашого сайту - <a href=\"http://mailto:"
+"oleg@valko.pro\" target=\"_blank\">oleg@valko.pro</a>"
+
+#: admin/settings-page.php:21
+msgid ""
+"After creating the template on the page - <a href=\"http://instantview."
+"telegram.org/my/\" target=\"_blank\">instantview.telegram.org/my</a>, click "
+"the button - VIEW IN TELEGRAM and copy the link. At the end of this link "
+"will be your RHASH code. You need to paste it into the settings below"
+msgstr ""
+"Після створення шаблону на сторінці - <a href=\"http://instantview.telegram."
+"org/my/\" target=\"_blank\">instantview.telegram.org/my</a>, натисніть на "
+"кнопку VIEW IN TELEGRAM і скопіюйте кудись ваше посилання, в кінці посилання "
+"ви знайдете ваш унікальний RHASH код. Вставте його в налаштування нижче"
+
+#: admin/settings-page.php:23
+msgid "Step 2"
+msgstr "Крок 2"
+
+#: admin/settings-page.php:30
+msgid "Save Changes"
+msgstr "Зберегти налаштування"
+
+#: admin/settings-page.php:33
+msgid "Step 3"
+msgstr "Крок 3"
+
+#: admin/settings-page.php:34
+msgid ""
+"After saving the settings at the end of each record will be a button with an "
+"automatically generated link. You need to copy and paste it into Telegram"
+msgstr ""
+"Після збереження налаштувань, в кінці кожного запису буде автоматично "
+"згенероване посилання. Скопіюйте його та вставте в Telegram"
+
+#: admin/settings-page.php:51
+msgid ""
+"Enter your rhash that you received after creating the template on <a href="
+"\"http://instantview.telegram.org\" target=\"_blank\">instantview.telegram."
+"org</a>"
+msgstr ""
+"Введіть ваш rhash код, який ви отримали після створення шаблону - <a href="
+"\"http://instantview.telegram.org\" target=\"_blank\">instantview.telegram."
+"org</a>"
+
+#: vp-plus-telegram-instant-view.php:34
+msgid "Copy link and paste to Telegram"
+msgstr "Скопіюйте посиланння та вставте в телеграм"
+
+#. Plugin Name of the plugin/theme
+msgid "VP+ Telegram Instant View"
+msgstr "VP+ Telegram Миттєвий перегляд"
+
+#. Plugin URI of the plugin/theme
+msgid "http://vp-plus.top/plugins/vp-plus-telegram-instant-view"
+msgstr "http://vp-plus.top/plugins/vp-plus-telegram-instant-view"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin automatically generates a link for each entry to view in "
+"Telegram Instant View"
+msgstr ""
+"Цей плагін автоматично генерує посилання для миттєвого перегляду записів в "
+"Telegram"
+
+#. Author of the plugin/theme
+msgid "VP+ Oleg Valko"
+msgstr "VP+ Oleg Valko"
+
+#. Author URI of the plugin/theme
+msgid "http://valko.pro/"
+msgstr "http://valko.pro/"

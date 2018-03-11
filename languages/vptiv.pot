@@ -1,0 +1,108 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: VP+ Telegram Instant View\n"
+"POT-Creation-Date: 2018-02-25 08:44+0200\n"
+"PO-Revision-Date: 2018-02-25 08:39+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: vp-plus-telegram-instant-view.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/settings-page.php:7
+msgid "Telegram Instant View"
+msgstr ""
+
+#: admin/settings-page.php:16
+msgid "Step 1"
+msgstr ""
+
+#: admin/settings-page.php:18
+msgid ""
+"Create a template to instant view your site - <a href=\"http://instantview."
+"telegram.org/my/\" target=\"_blank\">instantview.telegram.org/my</a>"
+msgstr ""
+
+#: admin/settings-page.php:19
+msgid ""
+"Enter the addresses of your site and create a template according to the "
+"documentation - <a href=\"http://instantview.telegram.org/docs\" target="
+"\"_blank\">instantview.telegram.org/docs</a>"
+msgstr ""
+
+#: admin/settings-page.php:20
+msgid ""
+"Or order an individual template creation for your site - <a href=\"http://"
+"mailto:oleg@valko.pro\" target=\"_blank\">oleg@valko.pro</a>"
+msgstr ""
+
+#: admin/settings-page.php:21
+msgid ""
+"After creating the template on the page - <a href=\"http://instantview."
+"telegram.org/my/\" target=\"_blank\">instantview.telegram.org/my</a>, click "
+"the button - VIEW IN TELEGRAM and copy the link. At the end of this link "
+"will be your RHASH code. You need to paste it into the settings below"
+msgstr ""
+
+#: admin/settings-page.php:23
+msgid "Step 2"
+msgstr ""
+
+#: admin/settings-page.php:30
+msgid "Save Changes"
+msgstr ""
+
+#: admin/settings-page.php:33
+msgid "Step 3"
+msgstr ""
+
+#: admin/settings-page.php:34
+msgid ""
+"After saving the settings at the end of each record will be a button with an "
+"automatically generated link. You need to copy and paste it into Telegram"
+msgstr ""
+
+#: admin/settings-page.php:51
+msgid ""
+"Enter your rhash that you received after creating the template on <a href="
+"\"http://instantview.telegram.org\" target=\"_blank\">instantview.telegram."
+"org</a>"
+msgstr ""
+
+#: vp-plus-telegram-instant-view.php:34
+msgid "Copy link and paste to Telegram"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "VP+ Telegram Instant View"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://vp-plus.top/plugins/vp-plus-telegram-instant-view"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin automatically generates a link for each entry to view in "
+"Telegram Instant View"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "VP+ Oleg Valko"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://valko.pro/"
+msgstr ""
