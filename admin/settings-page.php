@@ -1,5 +1,5 @@
 <?php
-$vptiv_page = 'vptiv.php'; 
+$vptiv_page = 'vptiv.php';
 
 add_action( 'admin_menu', 'vptiv_option_menu' );
 function vptiv_option_menu(){
@@ -59,7 +59,7 @@ function vptiv_option_display_settings($args) {
  
 	$o = get_option( $option_name );
  
-	switch ( $type ) {  
+	switch ( $type ) {
 		case 'text':  
 			$o[$id] = esc_attr( stripslashes($o[$id]) );
 			echo "<input class='regular-text' type='text' id='$id' name='" . $option_name . "[$id]' value='$o[$id]' />";  
