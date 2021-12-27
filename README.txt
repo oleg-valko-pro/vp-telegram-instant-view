@@ -41,6 +41,10 @@ I want to draw your attention to the fact that instant view links will work auto
 Contact us and we will definitely help you, or we will create it for you
 
 == Changelog ==
+= 1.2.0 =
+* Replace Telegram link to admin panel. (check screenshots)
+* Add WPCS
+
 = 1.1.2 =
 * Change plugin name
 * Remove link to my facebook page from readme.txt
