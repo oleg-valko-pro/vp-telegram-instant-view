@@ -2,12 +2,14 @@
 /**
  *
  * @wordpress-plugin
- * Plugin Name:       VP Instant View for Telegram
+ * Plugin Name:       VALKO.PRO - Instant View for Telegram
  * Plugin URI:        http://valko.pro/plugins/vp-plus-telegram-instant-view
  * Description:       This plugin automatically generates a link for each entry to view in Telegram Instant View
- * Version:           1.1.2
+ * Version:           1.2.0
+ * Requires at least: 5.2
+ * Requires PHP:      7.2
  * Author:            Oleg Valko
- * Author URI:        http://valko.pro/
+ * Author URI:        https://valko.pro/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       vptiv
@@ -27,21 +29,41 @@ function vptiv_load_plugin_textdomain() {
 // Require files
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
 
-// Display Telegram Link before the_content()
-add_filter( 'the_content', 'vptiv_link' );
-function vptiv_link( $content ) {
-	$all_options = get_option( 'vptiv_options' );
-	
-	if ( current_user_can( 'manage_options' ) && ! empty( $all_options['id_vptiv_rhash_field'] ) ) {
-		$rhash = $all_options['id_vptiv_rhash_field'];
-		$text  = __( 'Copy link and paste to Telegram', 'vptiv' );
-		$url   = get_permalink();
-		$href  = "https://t.me/iv?url=$url&rhash=$rhash";
-		$style = 'style="background:#000; color:#fff; padding:5px; border-radius:5px; display:inline-block;"';
-		$style = apply_filters( 'vptiv_btn_style', $style );
-		
-		$content = $content . sprintf( '<a href="%s" class="vptiv-link"%s>%s</a>', $href, $style, $text );
+class vptiv_Render_Link {
+	/*
+	 * Plugin options
+	 */
+	private $options;
+
+	/*
+	 * Class construct
+	 */
+	public function __construct() {
+		$this->options = get_option( 'vptiv_options' );
 	}
-	
-	return $content;
+
+	/*
+	 * Hooks
+	 */
+	public function hooks() {
+		add_filter( 'post_row_actions', [ $this, 'add_action_row' ], 10, 2 );
+		add_filter( 'page_row_actions', [ $this, 'add_action_row' ], 10, 2 );
+	}
+
+
+	public function render_link( $id ) {
+		$link = get_permalink( $id );
+		$hash = $this->options['id_vptiv_rhash_field'];
+
+		return "https://t.me/iv?url=$link&rhash=$hash";
+	}
+
+	public function add_action_row( $actions, $page_object ) {
+		$actions['vptiv'] = '<input value=' . $this->render_link( $page_object->ID ) . '>';
+
+		return $actions;
+	}
 }
+
+$vptiv = new vptiv_Render_Link();
+$vptiv->hooks();
